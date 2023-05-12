@@ -7,8 +7,6 @@ from airflow.models import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime, timedelta
 
-#path = os.path.join(os.environ["AIRFLOW_HOME"],'dags','extraction')
-
 dag = DAG(dag_id='etl_process', 
           default_args = {
             'owner': 'airflow',
